@@ -8,6 +8,7 @@ from django.contrib.auth import get_user_model , login as lo
 from django.contrib import messages
 
 
+
 class index(generic.TemplateView): 
     template_name = 'index.html' 
 
@@ -42,3 +43,5 @@ class login(generic.TemplateView):
             'method' : 'post'
         }
         return render(request , 'login.html' , context)
+
+
